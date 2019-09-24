@@ -1,0 +1,19 @@
+<form id="select-merchant-form">
+
+</form>
+<div *ngIf="merchantId">
+	<ul *ngIf="getPaymentMethods().length > 1; else feedback">
+		<li *ngFor="let paymentMethod of getPaymentMethods()"  class="payment-method">
+			{{paymentMethod.title}}
+		</li>
+	</ul>
+	<ng-template #feedback>
+		<div class='payment-method-error'>
+			No payment methods found!
+		</div>
+	</ng-template>
+</div>
+
+
+
+

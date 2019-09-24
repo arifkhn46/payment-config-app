@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"tslint.autoFixOnSave": true,
+		"editor.tabSize": 2,
+		"files.trimTrailingWhitespace": true,
+		"tslint.configFile": "./tslint.config"
+	}
+}
